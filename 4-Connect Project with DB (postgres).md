@@ -81,8 +81,6 @@ Yeh SQL commands hoti hain jo **database structure** (schema) ko define karti ha
 |`create-drop`|App start pe table create, aur app band hote hi table **drop** (delete) ho jata hai. Mostly testing ke liye.|
 |`auto` (deprecated)|Old version ka keyword hai, use nahi karna chahiye.|
 
----
-
 #### Real World Mein Kya Use Karna Chahiye?
 
 |Environment|Recommended ddl-auto|
