@@ -27,3 +27,15 @@ docker run --name hospital-postgres \
 | DB Name          | `hospitaldb`        |
 | Docker Container | `hospital-postgres` |
 | Exposed Port     | `5432`              |
+
+#### Verify it's running
+
+```
+docker ps
+```
+
+#### Connect to PostgreSQL CLI
+
+```
+docker exec -it hospital-postgres psql -U postgres -d hospitaldb
+```
