@@ -12,6 +12,18 @@ public class Patient {
 ```
 
 
+### Entity
+
+`@Entity` ek annotation hai jo batata hai:
+
+> **"Yeh Java class database table ke barabar hai."**
+
+
+### @Id
+
+Primary key define karta hai.
+**Primary Key** ka kaam hota hai **table ki har row ko uniquely identify karna.**
+
 
 | Strategy   | Kya karta hai?                                                            | Kab use karein?               |
 | ---------- | ------------------------------------------------------------------------- | ----------------------------- |
