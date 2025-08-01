@@ -15,7 +15,7 @@ docker run --name hospital-postgres \
   -e POSTGRES_USER=postgres \
   -e POSTGRES_PASSWORD=pass123 \
   -e POSTGRES_DB=hospitaldb \
-  -p 5433:5433 \
+  -p 5433:5432 \
   -d postgres
 
 ```
