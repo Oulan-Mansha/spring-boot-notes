@@ -12,7 +12,7 @@ public class Patient {
 ```
 
 
-### Entity
+### @Entity
 
 `@Entity` ek annotation hai jo batata hai:
 
@@ -34,8 +34,7 @@ Primary key define karta hai.
 |🔹 Can be composite|Kabhi kabhi 2 ya zyada columns mil ke primary key bante hain (called **composite primary key**)|
 
 
-### strategy
-
+### strategy type
 
 | Strategy   | Kya karta hai?                                                            | Kab use karein?               |
 | ---------- | ------------------------------------------------------------------------- | ----------------------------- |
