@@ -46,6 +46,7 @@ docker exec -it hospital-postgres psql -U postgres -d hospitaldb
 
 # Configure application.properties in spring boot
 
+
 ```
 #DB configuration  
 spring.datasource.url=jdbc:postgresql://localhost:5433/hospitaldb  
@@ -56,4 +57,7 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 
 ```
+
+
+
 
