@@ -1,8 +1,30 @@
 
-| Strategy   | Kya karta hai?                               | Kab use karein?               |
-| ---------- | -------------------------------------------- | ----------------------------- |
-| `AUTO`     | Hibernate khud strategy choose karta hai     | Jab portable app banani ho    |
-| `IDENTITY` | DB ka `AUTO_INCREMENT` use karta hai         | MySQL, PostgreSQL, SQL Server |
-| `SEQUENCE` | Sequence object use karta hai                | PostgreSQL, Oracle            |
-| `TABLE`    | Extra table banake IDs track karta hai.      | Har DB mein kaam karta hai    |
-| `UUID`     | Random globally unique ID generate karta hai | Microservices, public IDs     |
+
+
+```
+@Entity  
+public class Patient {  
+  
+    @Id  
+    @GeneratedValue(strategy = GenerationType.IDENTITY)  
+    private Long id;   
+}
+```
+
+
+
+| Strategy   | Kya karta hai?                                                            | Kab use karein?               |
+| ---------- | ------------------------------------------------------------------------- | ----------------------------- |
+| `AUTO`     | Hibernate khud strategy choose karta hai                                  | Jab portable app banani ho    |
+| `IDENTITY` | DB ka `AUTO_INCREMENT` use karta hai                                      | MySQL, PostgreSQL, SQL Server |
+| `SEQUENCE` | DB ke andar sequence object hota hai jo har baar ek naya number deta hai. | PostgreSQL, Oracle            |
+| `TABLE`    | Extra table banake IDs track karta hai.                                   | Har DB mein kaam karta hai    |
+| `UUID`     | Random globally unique ID generate karta hai                              | Microservices, public IDs     |
+
+|**Strategy**|**Kaam kaun karta hai?**|**Explanation (Simple Urdu)**|
+|---|---|---|
+|`AUTO`|Hibernate|Hibernate khud decide karta hai ke kaunsa use kare.|
+|`IDENTITY`|**Database**|DB (jaise MySQL/PostgreSQL) khud `AUTO_INCREMENT` ya `SERIAL` se ID generate karta hai. Hibernate sirf wait karta hai.|
+|`SEQUENCE`|**Database** (sequence) + Hibernate|Sequence DB mein hota hai, lekin Hibernate usse call karta hai aur ID assign karta hai.|
+|`TABLE`|**Hibernate**|Hibernate ek table banaata hai jisme woh last ID store karta hai, DB ko koi idea nahi hota.|
+|`UUID`|**Hibernate** (or Java code)|Hibernate ya Java random UUID generate karta hai. DB ka role nahi hota.|
