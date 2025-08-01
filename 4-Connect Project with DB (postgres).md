@@ -39,3 +39,7 @@ docker ps
 ```
 docker exec -it hospital-postgres psql -U postgres -d hospitaldb
 ```
+
+
+
+#
