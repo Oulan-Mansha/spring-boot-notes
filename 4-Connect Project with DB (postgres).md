@@ -42,4 +42,7 @@ docker exec -it hospital-postgres psql -U postgres -d hospitaldb
 
 
 
-#
+
+
+# Configure application.properties in spring boot
+
