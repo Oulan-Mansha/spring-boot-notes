@@ -24,6 +24,18 @@ public class Patient {
 Primary key define karta hai.
 **Primary Key** ka kaam hota hai **table ki har row ko uniquely identify karna.**
 
+#### Rules of Primary Key:
+
+|Rule|Meaning|
+|---|---|
+|🔹 Unique|Do rows ka primary key same nahi ho sakta|
+|🔹 Not Null|Primary key kabhi bhi null nahi ho sakta|
+|🔹 One per table|Har table mein sirf ek primary key hoti hai|
+|🔹 Can be composite|Kabhi kabhi 2 ya zyada columns mil ke primary key bante hain (called **composite primary key**)|
+
+
+### strategy
+
 
 | Strategy   | Kya karta hai?                                                            | Kab use karein?               |
 | ---------- | ------------------------------------------------------------------------- | ----------------------------- |
