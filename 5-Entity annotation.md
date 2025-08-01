@@ -52,3 +52,7 @@ Primary key define karta hai.
 |`SEQUENCE`|**Database** (sequence) + Hibernate|Sequence DB mein hota hai, lekin Hibernate usse call karta hai aur ID assign karta hai.|
 |`TABLE`|**Hibernate**|Hibernate ek table banaata hai jisme woh last ID store karta hai, DB ko koi idea nahi hota.|
 |`UUID`|**Hibernate** (or Java code)|Hibernate ya Java random UUID generate karta hai. DB ka role nahi hota.|
+
+> UUID = Universally Unique Identifier
+> it is a 36 characters hexadecimal string
+
