@@ -58,6 +58,7 @@ spring.jpa.show-sql=true
 
 ```
 
+#### spring.jpa.hibernate.ddl-auto=
 
 
 
