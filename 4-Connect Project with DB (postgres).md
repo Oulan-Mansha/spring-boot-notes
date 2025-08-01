@@ -58,7 +58,19 @@ spring.jpa.show-sql=true
 
 ```
 
-#### spring.jpa.hibernate.ddl-auto=
+### spring.jpa.hibernate.ddl-auto=
+
+ **DDL** = Data Definition Language
+Yeh SQL commands hoti hain jo **database structure** (schema) ko define karti hain:
+
+| Command  | Purpose                      |
+| -------- | ---------------------------- |
+| `CREATE` | Naya table ya column banana  |
+| `ALTER`  | Table ko modify karna        |
+| `DROP`   | Table ya column delete karna |
+
+
+
 
 
 
