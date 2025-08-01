@@ -83,13 +83,11 @@ Yeh SQL commands hoti hain jo **database structure** (schema) ko define karti ha
 
 #### Real World Mein Kya Use Karna Chahiye?
 
-|Environment|Recommended ddl-auto|
-|---|---|
-|**Development**|`update`|
-|**Testing**|`create-drop`|
-|**Production**|`none` ya `validate` (schema manually banate hain)|
+| Environment     | Recommended ddl-auto                               |
+| --------------- | -------------------------------------------------- |
+| **Development** | `update`                                           |
+| **Testing**     | `create-drop`                                      |
+| **Production**  | `none` ya `validate` (schema manually banate hain) |
 
 
-
-
-
+### spring.jpa.show-sql=true
